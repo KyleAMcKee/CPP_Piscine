@@ -1,5 +1,5 @@
-#ifndef FIXED_CLASS_HPP_
-#define FIXED_CLASS_HPP_
+#ifndef FIXED_HPP_
+#define FIXED_HPP_
 
 #include <iostream>
 
@@ -12,6 +12,7 @@ class Fixed {
         Fixed& operator=(Fixed const &rhs);
         int getRawBits( void ) const;
         void setRawBits( int const raw );
+        
     private:
         int value;
         static const int fractional_bits = 8;
